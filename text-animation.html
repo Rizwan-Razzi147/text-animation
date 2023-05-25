@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        height: 10vh;
+        border-right: 5px solid red;
+        margin: 150px auto;
+        background-color: yellowgreen;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        animation: wide 10s linear infinite;
+      }
+      @keyframes wide {
+        0% {
+          width: 0%;
+        }
+        16% {
+          width: 40%;
+        }
+        33% {
+          width: 0%;
+        }
+        33.1% {
+          width: 0%;
+        }
+        50% {
+          width: 30%;
+        }
+        66% {
+          width: 0%;
+        }
+        66.1% {
+          width: 0%;
+        }
+        83% {
+          width: 32%;
+        }
+        100% {
+          width: 0%;
+        }
+      }
+      .text {
+        color: red;
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        position: absolute;
+        white-space: nowrap;
+      }
+      .t1 {
+        animation: text1 10s linear infinite;
+      }
+      @keyframes text1 {
+        0% {
+          visibility: visible;
+        }
+        33% {
+          visibility: hidden;
+        }
+        100% {
+          visibility: hidden;
+        }
+      }
+      .t2 {
+        animation: text2 10s linear infinite;
+      }
+      @keyframes text2 {
+        0% {
+          visibility: hidden;
+        }
+        33% {
+          visibility: hidden;
+        }
+        33.1% {
+          visibility: visible;
+        }
+        66% {
+          visibility: hidden;
+        }
+
+        100% {
+          visibility: hidden;
+        }
+      }
+      .t3 {
+        animation: text3 10s linear infinite;
+      }
+      @keyframes text3 {
+        0% {
+          visibility: hidden;
+        }
+        66% {
+          visibility: hidden;
+        }
+        66.1% {
+          visibility: visible;
+        }
+        100% {
+          visibility: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1 class="text t1">PROVIDE ALL IT SERVICES</h1>
+      <h1 class="text t2">HOSTING SERVICES</h1>
+      <h1 class="text t3">DIGITAL MARKETING</h1>
+    </div>
+  </body>
+</html>
